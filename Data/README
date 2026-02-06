@@ -1,0 +1,42 @@
+# MovieLens Dataset for Movie Recommendation System
+
+## Summary
+The MovieLens dataset, provided by the GroupLens Research Project at the University of Minnesota, is a rich resource for developing movie recommendation systems. This dataset includes 100,000 ratings from 943 users across 1,682 movies, with each user rating at least 20 movies. Alongside ratings, basic demographic information (age, gender, occupation, and zip code) is available for each user, offering a foundation for personalized recommendation models.
+
+### Dataset Specifications:
+- **Ratings**: 100,000 ratings on a 1-5 scale
+- **Users**: 943 unique users, each with at least 20 rated movies
+- **Movies**: 1,682 unique movies with metadata
+
+### Data Collection Period
+Data was collected through the MovieLens website between September 19, 1997, and April 22, 1998. Users with fewer than 20 ratings or incomplete demographic information were excluded to ensure data quality.
+
+## Usage License
+This dataset is available for research purposes under the following conditions:
+1. **Endorsement**: Do not imply endorsement by the University of Minnesota or the GroupLens Research Group.
+2. **Acknowledgment**: Cite the dataset when publishing research based on it. See below for citation details.
+3. **Redistribution**: Do not redistribute the data without permission.
+4. **Commercial Use**: Commercial use requires permission from the GroupLens Research Project.
+
+For further inquiries, contact GroupLens at grouplens-info@cs.umn.edu.
+
+## Citation
+If you use this dataset in your research, please cite:
+> Harper, F. M., & Konstan, J. A. (2015). The MovieLens Datasets: History and Context. *ACM Transactions on Interactive Intelligent Systems (TiiS), 5*(4), Article 19, 19 pages. DOI: [10.1145/2827872](http://dx.doi.org/10.1145/2827872).
+
+## File Descriptions
+The dataset files include ratings, user demographics, and movie information:
+
+- **u.data**: Contains all ratings with fields for `user_id | item_id | rating | timestamp`.
+- **u.info**: Summarizes the number of users, items, and ratings.
+- **u.item**: Details for each movie (`movie_id | title | release date | genres`).
+- **u.user**: Contains demographic data (`user_id | age | gender | occupation | zip`).
+- **u.genre** and **u.occupation**: Define the available genres and occupations.
+
+### Cross-Validation Sets
+For model training and testing, 80%/20% splits are provided in files like `u1.base` and `u1.test`. Additionally, **ua** and **ub** splits ensure exactly 10 ratings per user in the test set.
+
+## Additional Information
+The GroupLens Project explores information filtering, collaborative filtering, and recommendation systems. For more information on GroupLens research, visit [GroupLens](http://www.grouplens.org/). 
+
+
