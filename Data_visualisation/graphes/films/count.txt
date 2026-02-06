@@ -1,0 +1,23 @@
+occupation
+administrator     79
+artist            28
+doctor             7
+educator          95
+engineer          67
+entertainment     18
+executive         32
+healthcare        16
+homemaker          7
+lawyer            12
+librarian         51
+marketing         26
+none               9
+other            105
+programmer        66
+retired           14
+salesman          12
+scientist         31
+student          196
+technician        27
+writer            45
+Name: user_id, dtype: int64
